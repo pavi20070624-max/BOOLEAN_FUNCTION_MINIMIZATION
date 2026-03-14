@@ -32,13 +32,26 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+#Developed By: Pavithra S
+#Register No: 212225040298/25017175
+module EXPERIMENT2 (
+    input A,B,C,D,
+	 output F 
+);
+assign F = (~A & ~B & ~C & ~D) |
+           (A & ~C & ~D)       |
+           (~B & C & ~D)       |
+           (~A & B & C & D)	 |
+		     (B & ~C & D);
+endmodule
+```
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+**RTL realization**:
 
 
-**RTL realization**
+
 
 **Output:**
 
